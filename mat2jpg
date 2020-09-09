@@ -1,0 +1,15 @@
+close all;
+clear all;
+
+raw_data=load('     .csv'); %读取数据
+
+
+n_col = size(raw_data,1)
+for i=1:1
+    filename = [ '6_' num2str(i) '.jpg']
+    A=[];
+    A = raw_data(i , :);
+    imwrite(A,filename);
+    
+    
+end
